@@ -1,9 +1,11 @@
 package factory;
 
 
+import factory.creator.CharacterFactory;
+import factory.creator.FantasyFactory;
+import factory.creator.SciFiFactory;
 import factory.subject.Character;
-import factory.subject.FantasyCharacter;
-import factory.subject.SciFiCharacter;
+import factory.subject.GameCharackter;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,15 +21,16 @@ public class Factorymain {
 
         int auswahl = Integer.parseInt(br.readLine());
 
-        Character factory;
+        CharacterFactory factory;
 
         switch (auswahl) {
-            case 1 -> factory = new FantasyCharacter();
-            case 2 -> factory = new SciFiCharacter();
+            case 1 -> factory = new FantasyFactory();
+            case 2 -> factory = new SciFiFactory();
             default -> throw new IllegalArgumentException("Ungültige Auswahl");
         }
-        factory.verteidigen();
-        factory.angreifen();
-        factory.faehigkeitEinsetzen();
+        Character character=new GameCharackter(factory);
+        character.verteidigen();
+        character.angreifen();
+        character.faehigkeitEinsetzen();
     }
 }

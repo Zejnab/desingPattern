@@ -1,21 +1,19 @@
 package factory.subject;
 
+import factory.creator.CharacterFactory;
 import factory.creator.basic.FaehigkeitSystem;
 import factory.creator.basic.Ruestung;
 import factory.creator.basic.WaffenSystem;
-import factory.creator.fantasy.FantasyFaehigkeit;
-import factory.creator.fantasy.FantasyRuestung;
-import factory.creator.fantasy.FantasyWaffen;
 
-public class FantasyCharacter implements Character{
+public class GameCharackter implements Character{
     private FaehigkeitSystem faehigkeitSystem;
     private Ruestung ruestung;
     private WaffenSystem waffenSystem;
 
-    public FantasyCharacter() {
-        faehigkeitSystem=new FantasyFaehigkeit();
-        ruestung=new FantasyRuestung();
-        waffenSystem=new FantasyWaffen();
+    public GameCharackter(CharacterFactory factory){
+        faehigkeitSystem=factory.createFaehigkeit();
+        ruestung= factory.createRuestung();
+        waffenSystem= factory.createWaffe();
     }
     @Override
     public void angreifen() {
