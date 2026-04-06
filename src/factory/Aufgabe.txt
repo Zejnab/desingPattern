@@ -1,0 +1,50 @@
+Das Spiel unterstützt unterschiedliche Welten / Modi, die das Verhalten aller Charaktere beeinflussen:
+
+🌲 Fantasy-Modus
+klassische Magie
+Schwerter, Bögen
+Drachen, Monster
+🤖 Sci-Fi-Modus
+Laserwaffen
+High-Tech-Rüstungen
+Robotergegner
+🧩 Charakterbestandteile
+
+Ein Charakter besteht immer aus mehreren Komponenten:
+
+Waffe
+Rüstung
+Fähigkeit (Skill)
+
+Diese Komponenten müssen zueinander passen.
+
+⚔️ Beispiele
+Fantasy-Modus
+Waffe: Schwert
+Rüstung: Leder- oder Eisenrüstung
+Fähigkeit: Feuerball
+Sci-Fi-Modus
+Waffe: LaserGun
+Rüstung: NanoSuit
+Fähigkeit: Hacking
+❗ Wichtig
+Ein Charakter darf keine gemischten Komponenten haben
+(z. B. LaserGun + Lederüstung ❌)
+Alle Komponenten eines Charakters müssen aus derselben Welt stammen
+🎮 Nutzungsszenario
+
+Ein Spieler startet das Spiel:
+
+Wählt einen Modus (Fantasy oder Sci-Fi)
+Das System erstellt automatisch einen vollständigen Charakter
+Der Spieler nutzt den Charakter im Spiel:
+angreifen
+verteidigen
+Fähigkeit einsetzen
+🔧 Anforderungen
+Das System soll später leicht erweiterbar sein (z. B. Cyberpunk-Modus)
+Neue Waffen oder Fähigkeiten sollen ohne große Änderungen hinzugefügt werden können
+Die Logik zur Erstellung der Komponenten soll zentral gesteuert werden
+⚠️ Besonderheit
+
+Ein Charakter besteht immer aus mehreren Objekten, die zusammengehören.
