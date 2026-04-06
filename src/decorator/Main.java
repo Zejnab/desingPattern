@@ -1,3 +1,5 @@
+package decorator;
+
 import decorator.beilage.Garnelen;
 import decorator.beilage.Spinat;
 import decorator.beilage.Zwiebeln;
