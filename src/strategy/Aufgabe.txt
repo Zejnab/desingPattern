@@ -1,0 +1,45 @@
+🧠 Aufgabe: Dynamisches Preissystem für ein Streaming-Abo
+
+Du arbeitest an einem Backend-System für eine Streaming-Plattform namens StreamFlex.
+
+Die Plattform bietet verschiedene Arten von Nutzern (z. B. Standard, Student, Premium) und unterschiedliche Inhalte (Filme, Serien, Live-Events).
+Der monatliche Preis eines Nutzers soll dynamisch berechnet werden.
+
+📦 Kontext
+
+Jeder Nutzer hat:
+
+einen Account-Typ
+eine Liste von gesehenen Inhalten im Monat
+optionale Rabattcodes
+
+Jeder Inhalt hat:
+
+eine Kategorie (Film, Serie, Live)
+eine Dauer
+ggf. einen Basispreis
+⚙️ Anforderungen
+Die Plattform muss den monatlichen Preis eines Nutzers berechnen.
+Die Berechnung hängt davon ab:
+welcher Account-Typ vorliegt
+welche Inhalte konsumiert wurden
+ob ein Rabatt aktiv ist
+Es gibt mehrere Berechnungslogiken:
+Manche Nutzer zahlen einen Fixpreis
+Andere zahlen pro konsumiertem Inhalt
+Manche haben kombinierte Modelle (z. B. Grundpreis + Zuschläge)
+In Zukunft sollen neue Modelle hinzukommen, z. B.:
+„Pay per Minute“
+„Flat mit Einschränkungen“
+„Wochenend-Special“
+🧩 Weitere Rahmenbedingungen
+Die Berechnung soll austauschbar und erweiterbar sein
+Bestehender Code soll möglichst nicht angepasst werden müssen, wenn neue Modelle hinzukommen
+Die Lösung soll testbar und klar strukturiert sein
+🎯 Ziel
+
+Implementiere ein System, das:
+
+verschiedene Preislogiken unterstützt
+flexibel erweitert werden kann
+sauber zwischen Daten (User, Content) und Verhalten (Preisberechnung) trennt
